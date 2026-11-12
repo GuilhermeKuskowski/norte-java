@@ -8,6 +8,22 @@
 | Guilherme de Paula Kuskowski | 562471 |
 | Guilherme Eduardo de Lima | 566045 |
 
+## Ficha da CitizenTech
+
+| Campo | Norte |
+|---|---|
+| **Nome da CitizenTech** | Norte – seus direitos, com caminho |
+| **Cidade e bairro** | São Paulo (SP) – Brasilândia, Zona Norte |
+| **Cidadão beneficiado** | Morador da Brasilândia com um problema de direitos do dia a dia (trabalho, INSS, dívidas, aluguel, família, saúde, idosos e PcD, trânsito, serviços públicos) |
+| **Problema, em uma frase** | Quem mais precisa perde direitos porque não sabe que lei o protege, que prazo está correndo e onde existe ajuda gratuita perto de casa. |
+| **Como funciona** | A pessoa conta o problema, a triagem identifica a área e o Norte devolve um plano de ação com leis citadas, prazos com semáforo, checklist de documentos, a resposta para "preciso de advogado?" e encaminhamento para atendimento gratuito. |
+| **O que cada parte faz** | **Java (este repositório):** API REST com o plano de ação · **Database Design:** banco Oracle (tabelas NRT_) · **Dynamic Programming:** triagem, priorização e rota acessível em Python · **Data Science:** previsão de resolução de reclamações · **Network:** rede do Ponto Norte · **AR/VR:** vídeo 3D da jornada · **Agile:** backlog e MVP |
+| **Link do repositório** | https://github.com/GuilhermeKuskowski/norte |
+| **Indicador de impacto** | Pessoas orientadas por mês e % que cumprem a primeira ação do plano dentro do prazo |
+| **ODS conectados** | 1, 3, 5, 8, 10, 16 |
+
+---
+
 O **Norte** orienta moradores da Brasilândia (Zona Norte de São Paulo) sobre direitos do dia a dia. A pessoa conta o problema e o Norte devolve um **plano de ação** com:
 - passos em ordem, cada um com prazo e semáforo;
 - as leis vigentes citadas, com link oficial;
@@ -17,8 +33,11 @@ O **Norte** orienta moradores da Brasilândia (Zona Norte de São Paulo) sobre d
 
 Esta API implementa essa capacidade central sobre o banco Oracle da FIAP.
 
-- **Deploy (Render):** `https://<nome-do-servico>.onrender.com` ← *preencher depois do deploy*
-- **Swagger (testar os endpoints):** `<link do deploy>/swagger-ui.html`
+- **Repositório:** https://github.com/GuilhermeKuskowski/norte-java
+- **Deploy (Render):** https://norte-rm562471-onrender-com.onrender.com
+- **Swagger (testar os endpoints):** https://norte-rm562471-onrender-com.onrender.com/swagger-ui.html
+
+> O plano gratuito do Render "dorme" sem uso: a primeira requisição pode levar até 1 minuto.
 
 ---
 
