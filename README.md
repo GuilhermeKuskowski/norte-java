@@ -75,9 +75,10 @@ O acesso ao banco segue o padrão visto em aula: o **DAO recebe a `Connection` n
 
 ## 1. Preparar o banco (uma vez só)
 
-No **SQL Developer**, conectado com o usuário (RM) que a API vai usar, rode com **F5** os scripts do projeto de Database Design, nesta ordem:
-1. `01_ddl.sql`, que cria as 12 tabelas `NRT_`;
-2. `02_dml.sql`, que insere os dados de exemplo.
+Os scripts estão na pasta [`banco/`](banco) deste repositório (são os mesmos do projeto de Database Design).
+No **SQL Developer**, conectado com o usuário (RM) que a API vai usar, abra cada arquivo, copie o conteúdo para uma planilha e rode com **F5**, nesta ordem:
+1. `banco/01_ddl.sql`, que cria as 12 tabelas `NRT_`;
+2. `banco/02_dml.sql`, que insere os dados de exemplo.
 
 ## 2. Rodar localmente no IntelliJ
 
